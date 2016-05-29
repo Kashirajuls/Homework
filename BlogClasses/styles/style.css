@@ -1,0 +1,81 @@
+body
+  {
+    background-position:absolute;
+    color:lightgrey;
+    font-family: "Tornado", "Monospace", "serif";
+    background-color: rgba(3,30,99,1);
+    background: @include filter-gradient(#031e63, #240137, horizontal);
+    background: @include background-image(linear-gradient(left bottom, rgba(3,30,99,1) 0%, rgba(36,1,55,1) 100%));
+  }
+
+ .footer
+  {
+    float:bottom;
+    padding-bottom: 0px;
+    margin: 0 auto;
+  }
+
+  .title
+  {
+    padding-top:15px;
+    margin:0 auto;
+    width:325px;
+    border-bottom:1px solid white;
+    text-align: center;
+  }
+
+  .title:hover
+  {
+    cursor: pointer;
+  }
+
+  div {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    position:absolute;
+    padding: 20px;
+    display: inline-block;
+    color:white;
+    border-bottom:1px solid lightgrey;
+    display: none;
+    width:300px;
+    text-decoration: none;
+  }
+
+  textarea, input{
+    width:300px;
+    float: left;
+  }
+
+  button{
+    width:309px;
+    padding:5px;
+  }
+
+   ul {
+    list-style-type: none;
+    float: right;
+    padding-top:0px;
+    border-bottom:1px solid white;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: white;
+    color: white;
+}
+li {
+    display: inline-block;
+    align-content: center;
+    
+}
